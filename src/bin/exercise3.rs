@@ -1,19 +1,26 @@
-// create a function is_this_cash which takes in string and returns Result of String, String
-// if input of string equals to "cash", return Ok of "Yes this is cash"
-// else return Err of "No, this is not cash"
+// create a struct Novel with title, author, genre (all String)
 
-fn main() {
-    // create variable cash of type Option<String>, assign "cash"
+// create a struct NonFiction with title, author, topic (all String)
 
-    // create variable credit of type Option<String>, assign "credit"
+// create a trait Book
 
-    // using if let on cash, bind variable within Some
+// implement Book trait for Novel
+   // define get_summary which takes in &self
+       // prints "<Book Title> is a <Book Genre> written by <Book Author>"
 
-    // pass the binded variable into is_this_cash function and use match
+// implement Book trait for NonFiction
+   // define get_summary which takes in &self
+       // prints "<Book Title> is a <Book Topic> written by <Book Author>"
 
-    // if matches on OK, print "Output X", where X the value within OK
+// define fuction wihch takes in a generic that that implements Book trait
+   // call get_summary with the book
 
-    // if matches on Err, print "Output X", where X the value within Err
-
-    // do the same as above on credit
-}
+   fn main() {
+    // create book_1 of instance Novel
+   
+    // create book_2 of instance NonFiction
+ 
+    // call print_book_summary with book_1
+    // call print_book_summary with book_2
+ }
+ 
